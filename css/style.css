@@ -1,0 +1,122 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+  --font-family: 'Outfit';
+  --font-size: 18px;
+  --text-color: hsl(215, 51%, 70%);
+  --eth-color: hsl(178, 100%, 50%);
+}
+
+/* universal selector */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: var(--font-family);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 350px;
+  height: 570px;
+  background-color: var(--card-bg);
+  margin: 3rem;
+  border-radius: 10px;
+}
+
+.img-container {
+  padding: 1.5em;
+  padding-bottom: 0;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.img-container img:hover {
+  transform: rotate(180deg);
+}
+
+.text-container {
+  padding: 20px 1.5em 0;
+}
+
+.text-container h2:hover {
+  color: var(--eth-color);
+  cursor: pointer;
+}
+
+.text-container p {
+  padding-top: 20px;
+  color: var(--text-color);
+}
+
+.eth-time-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 1.5em 0;
+}
+
+.eth-container {
+  display: flex;
+  align-items: center;
+  color: var(--eth-color);
+}
+
+.eth-container h5 {
+  padding-left: 7px;
+}
+
+.time-container {
+  display: flex;
+  align-items: center;
+  color: var(--text-color)
+}
+
+.time-container p {
+  padding-left: 7px;
+}
+
+hr {
+  color: var(--line-color);
+  margin: 20px 1.5em 0;
+}
+
+.owner-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 1.5em 0;
+  color: var(--text-color);
+}
+
+.owner-container img {
+  width: 10%;
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+  margin-right: 15px;
+}
+
+.owner-container span {
+  color: var(--white-color);
+}
+
+/* footer */
+footer {
+  padding-bottom: 1em;
+}
